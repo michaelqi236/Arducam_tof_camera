@@ -79,7 +79,7 @@ int main()
 {
     ArducamTOFCamera tof;
     ArducamFrameBuffer *frame;
-    if (tof.open(Connection::CSI))
+    if (tof.open(Connection::CSI, 2))
     {
         std::cerr << "initialization failed" << std::endl;
         exit(-1);

@@ -24,16 +24,4 @@ sudo apt install -y libqt4-test
 sudo pip3 install opencv-python ArducamDepthCamera
 sudo pip3 install numpy --upgrade
 
-echo "reboot now?(y/n):"
-read -r USER_INPUT
-case $USER_INPUT in
-'y'|'Y')
-    echo "reboot"
-    sudo reboot
-;;
-*)
-    echo "cancel"
-    echo "The script settings will only take effect after restarting, please restart yourself later."
-    exit 1
-;;
-esac
+echo "suggest reboot!!"
