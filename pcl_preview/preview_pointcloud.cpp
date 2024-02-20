@@ -71,7 +71,7 @@ int main()
     float *amplitude_ptr;
     const unsigned int num_points = 43200;
     uint8_t *preview_ptr = new uint8_t[num_points];
-    if (tof.open(Connection::CSI))
+    if (tof.open(Connection::CSI, 2))
     {
         std::cerr << "initialization failed" << std::endl;
         exit(-1);
