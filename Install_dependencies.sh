@@ -40,16 +40,5 @@ sudo apt install -y arducam-config-parser-dev arducam-usb-sdk-dev arducam-tof-sd
 sudo apt-get install cmake -y
 sudo apt install libopencv-dev -y
 
-echo "reboot now?(y/n):"
-read -r USER_INPUT
-case $USER_INPUT in
-'y' | 'Y')
-    echo "reboot"
-    sudo reboot
-    ;;
-*)
-    echo "cancel"
-    echo "The script settings will only take effect after restarting, please restart yourself later."
-    exit 1
-    ;;
-esac
+echo "suggest reboot!!"
+
