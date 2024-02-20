@@ -55,7 +55,7 @@ def usage(argv0):
 
 if __name__ == "__main__":
     cam = ac.ArducamCamera()
-    if cam.open(ac.TOFConnect.CSI,0) != 0 :
+    if cam.open(ac.TOFConnect.CSI,2) != 0 :
         print("initialization failed")
     if cam.start(ac.TOFOutput.DEPTH) != 0 :
         print("Failed to start camera")
